@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập JS buổi 4</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h2 class="text-danger">Bài tập 1</h2>
+        <div class="form-group">
+          <label for="">Nhập số nguyên thứ 1 </label>
+          <input
+            type="text"
+            name=""
+            id="number1"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Nhập số nguyên thứ 2</label>
+          <input
+            type="text"
+            name=""
+            id="number2"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Nhập số nguyên thứ 3</label>
+          <input
+            type="text"
+            name=""
+            id="number3"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <button onclick="handleConvertNumber()">
+          Sắp xếp theo thứ tự tăng dần
+        </button>
+        <div id="result1"></div>
+      </div>
+      <div class="mt-5">
+        <h2 class="text-danger">Bài tập 2</h2>
+        <div class="form-group">
+          <label for=""
+            >Cho hỏi ai đang sử dụng máy ? <br />
+            Nếu là Bố xin vui lòng nhập B <br />
+            Nếu là Mẹ xin vui lòng nhập M <br />
+            Nếu là anh trai xin vui lòng nhập A <br />
+            Nếu là em gái xin vui lòng nhập E</label
+          >
+          <input
+            type="text"
+            name=""
+            id="question"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <button onclick="handleQuestion()">Chào hỏi</button>
+        <div id="result2"></div>
+      </div>
+      <div class="mt-5">
+        <h2 class="text-danger">Bài tập 3</h2>
+        <div class="form-group">
+          <label for="">Nhập số nguyên thứ 1 </label>
+          <input
+            type="text"
+            name=""
+            id="so1"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Nhập số nguyên thứ 2</label>
+          <input
+            type="text"
+            name=""
+            id="so2"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Nhập số nguyên thứ 3</label>
+          <input
+            type="text"
+            name=""
+            id="so3"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <button onclick="handleNumber()">Tính số lẻ và số chẵn</button>
+        <div id="result3"></div>
+      </div>
+      <div class="mt-5">
+        <h2 class="text-danger">Bài tập 4</h2>
+        <div class="form-group">
+          <label for="">Nhập vào chiều dài </label>
+          <input
+            type="text"
+            name=""
+            id="chieuDai"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Nhập vào chiều rộng</label>
+          <input
+            type="text"
+            name=""
+            id="chieuRong"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Nhập vào cạnh huyền</label>
+          <input
+            type="text"
+            name=""
+            id="canhHuyen"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <button onclick="handleTriangle()">Định dạng tam giác</button>
+        <div id="result4"></div>
+      </div>
+    </div>
+    <br /><br /><br />
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JS/index.js"></script>
+  </body>
+</html>
